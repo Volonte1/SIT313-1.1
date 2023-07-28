@@ -1,0 +1,116 @@
+body {
+    margin: 0;
+    margin-bottom: 5rem;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax());
+}
+
+.img-wrapper {
+    position: relative;
+    overflow: hidden;
+}
+
+.img-wrapper > img {
+    display: block;
+    width: 1fr;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    object-position: center;
+}
+
+.img-wrapper > .content {
+    position: absolute;
+    inset: 0;
+    font-size: 2rem;
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.img-wrapper > img,
+.img-wrapper > .content {
+    transition: 200ms ease-in-out;
+}
+
+.img-wrapper:hover > img.blur {
+    filter: blur(25px);
+}
+
+.img-wrapper > .content.content.fade {
+    opacity: 0;
+}
+
+.img-wrapper:hover >.content.fade {
+    opacity: 1;
+}
+
+.overlayMe {
+    text-align: center;
+}
+
+.text2 {
+    color: red;
+    text-align: center;
+    font-size: 25px;
+    font-family: Arial;
+}
+
+.text3 {
+    color: red;
+    text-align: center;
+    font-size: 25px;
+    font-family: Arial;
+}
+
+
+.smartbike {
+    display: flex;
+
+    margin-right:auto;
+    margin-left:auto;
+
+}
+
+.flutter {
+    display: flex;
+
+    margin-right:auto;
+    margin-left:auto;
+}
+
+.text4 {
+    color: red;
+    text-align: center;
+    font-size: 25px;
+    font-family: Arial;
+}
+
+.column {
+    float: left;
+    width: 20%;
+    padding: 10px;
+    display: flex;
+  }
+  
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+
+.box {
+    display: flex;
+    align-items:center;
+    position: relative;
+ }
+
+ .projects {
+    text-align: center;
+}
+
+

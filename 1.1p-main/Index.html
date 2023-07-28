@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        
+        <title>Welcome To My Website</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="Styles.css">
+        <style>
+        .container {
+            position: relative;
+            width: 100%;
+           
+        }
+
+        .overlayText {
+            position: absolute;
+            top: 10;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 100%;
+            width: 100%;
+            opacity: 0;
+            transition: .5s ease;
+            font-family: arial;
+            }
+
+        .container:hover .overlayText {
+        opacity: 1;
+        }
+
+        .text {
+        color: white;
+        font-size: 40px;
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        text-align: center;
+        }
+
+        .me {
+            position: center;
+            top: 40%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            transition: .5s ease;
+
+            
+        }
+
+        .container:hover .overlayMe {
+            opacity: 1;
+        }
+
+        
+        .topnav {
+        background-color: white;
+        overflow: hidden;
+        }
+
+
+        .topnav a {
+        float: left;
+        color: red;
+        text-align: center;
+        padding: 20px 26px;
+        text-decoration: none;
+        font-size: 17px;
+        font-weight: bold;
+        font-family: arial;
+        }
+
+
+    
+        </style>
+
+    </head>
+
+    <body>
+
+        <div class="topnav">
+            <a class="active" href="#home">Home</a>
+            <a href="#work">Work</a>
+            <a href="#about">Contact</a>
+          </div> 
+
+
+
+        <div class="container">
+        <img src="Cool Background.jpg" alt="Background" class="image" width ="100%" height = 100%>
+        
+        
+
+        <div class="overlayText">
+            <div class = "text"> Hey there! Im William McCallum and this is my website!</div>
+            <a  class="me" title="image"></a>
+          </div>
+        </div>
+
+        <div class="overlayMe">
+            <img src="ProfilePhoto.jpg" alt="Profile"  width ="20%"; height = 20%;>
+          </div>
+        </div>
+
+        <div class="text2">
+            <h4>I am a student at deakin university and this is my final trimester! I am currently working as a technical support analyst. </h4>
+        </div>
+        
+        <hr style="width: 15%;">
+
+        <div class="text3">
+            <h4>Here are my projects so far: </h4>
+        </div>
+
+        <div class = "projects">
+            <img src="nexigen.png" alt="smart bike"  width="30%"; height="30%">
+
+            <h4> This is the logo of the company I work for at the moment, we are australias largest privately owned web hosting company</h4>
+
+        </div>
+
+
+
+            <div class = "projects">
+            <img src="Product of the Year Certificate.png" alt="smart bike"  width="30%"; height="30%">
+
+           <h4> This was the award for the smartbike innovation I participated in Capstone at Deakin University</h4>
+
+          </div>
+
+
+        <hr style="width: 15%;">
+
+        <div class = "projects">  
+            <img src="Flutter Website.png" alt="smart bike"  width="30%"; height="30%">
+                     
+           <h4>This was the app page I built in flutter</h4>   
+           
+        </div>
+
+        <hr style="width: 15%;">
+
+        <div class="text4">
+            <h4> Here are my random photos </h4>
+        </div>
+
+        <div class="row">
+            <div class="column">
+              <img src="Dinosaur.jpg" alt="Snow" style="width: 100%">
+            </div>
+            <div class="column">
+              <img src="uluru.jpg" alt="Forest" style="width:100%">
+            </div>
+            <div class="column">
+              <img src="walter.jpg" alt="Mountains" style="width:100%">
+            </div>
+              <div class="column">
+                <img src="sunset.jpg" alt="Mountains" style="width:100%">
+              </div>
+            <div class="column">
+                <img src="careers.jpg" alt="Mountains" style="width:100%">
+            </div>
+          </div> 
+
+    </body>
+</html>
